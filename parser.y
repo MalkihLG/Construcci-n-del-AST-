@@ -13,7 +13,7 @@ int yylex(void);
 %%
 
 program:
-    expression '\n' { printf("Sintaxis correcta. Expresión evaluada con éxito.\n"); }
+    expression '\n' { printf("Sintaxis correcta. Expresion evaluada con exito.\n"); }
     ;
 
 expression:
@@ -27,7 +27,7 @@ expression:
 %%
 
 void yyerror(const char *s) {
-    fprintf(stderr, "Error sintáctico: %s\n", s);
+    fprintf(stderr, "Error sintactico: %s\n", s);
 }
 
 int main(void) {
