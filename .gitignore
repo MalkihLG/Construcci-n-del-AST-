@@ -2,3 +2,15 @@ lex.yy.c
 parser.tab.c
 parser.tab.h
 ast.exe
+
+# Respaldos
+*.bak
+
+# Imagenes de prueba
+AST_JARVIS_COMPLETO.png
+AST_JARVIS_NUEVO.png
+AST_Mini_JARVIS.png
+ast_grande.png
+
+# Reporte temporal de Graphviz
+ast.pdf

@@ -1,0 +1,59 @@
+
+VAR energia = 100;
+VAR armadura = 50;
+VAR enemigos = 3;
+
+IMPRIMIR energia;
+
+SI energia > 50 {
+    energia = energia - 20;
+    IMPRIMIR energia;
+} SINO {
+    IMPRIMIR armadura;
+}
+
+VAR resultado = (10 + 5) * (8 - 3);
+IMPRIMIR resultado;
+
+VAR salud = 100;
+VAR fuerza = 80;
+VAR defensa = 60;
+VAR velocidad = 40;
+VAR nivel = 5;
+VAR experiencia = 250;
+VAR puntos = 30;
+VAR enemigosDerrotados = 12;
+
+VAR ataqueTotal = (fuerza + nivel) * 2;
+VAR defensaTotal = defensa + (nivel * 5);
+VAR poderFinal = ataqueTotal + defensaTotal;
+
+IMPRIMIR ataqueTotal;
+IMPRIMIR defensaTotal;
+IMPRIMIR poderFinal;
+
+SI salud > 50 {
+    VAR recuperacion = (salud + defensa) / 2;
+    IMPRIMIR recuperacion;
+
+    SI fuerza > velocidad {
+        VAR combo = (fuerza * 3) + nivel;
+        IMPRIMIR combo;
+    } SINO {
+        VAR escape = velocidad + defensa;
+        IMPRIMIR escape;
+    }
+} SINO {
+    VAR emergencia = salud + puntos;
+    IMPRIMIR emergencia;
+}
+
+SI experiencia >= 200 {
+    VAR recompensa = experiencia + (nivel * 10);
+    IMPRIMIR recompensa;
+} SINO {
+    IMPRIMIR experiencia;
+}
+
+VAR resultadoFinal = ((ataqueTotal + defensaTotal) * nivel) - salud;
+IMPRIMIR resultadoFinal;
