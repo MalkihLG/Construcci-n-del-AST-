@@ -1,0 +1,8 @@
+digraph AST {
+  node [shape=circle];
+  n2 [label="+"];
+  n2 -> n0;
+  n0 [label="5"];
+  n2 -> n1;
+  n1 [label="8"];
+}
